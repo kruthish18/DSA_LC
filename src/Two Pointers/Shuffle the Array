@@ -1,0 +1,15 @@
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+
+        f = 0
+        m = n
+        result = []
+        
+        while( f< m and m< (2*n) ):
+            result.append(nums[f])
+            result.append(nums[m])
+            
+            f = f+1
+            m = m+1
+            
+        return result
